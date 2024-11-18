@@ -29,7 +29,7 @@ ylabel("The step response")
 legend_labels = arrayfun(@(x) sprintf('$p\\_3=%.1f$', x), p3, 'UniformOutput', false);
 lgd = legend(legend_labels, 'Interpreter', 'latex');
 set(fig, "position", [200, 50, 1000, 550]);
-saveas(fig, "HW07/Fig/Step_Response.png");
+%saveas(fig, "HW07/Fig/Step_Response.png");
 
 fig2 = figure(Name = "Impulse Response");
 hold on;
@@ -47,4 +47,4 @@ ylabel("The impulse response")
 legend_labels = arrayfun(@(x) sprintf('$p\\_3=%.1f$', x), p3, 'UniformOutput', false);
 lgd = legend(legend_labels, 'Interpreter', 'latex');
 set(fig2, "position", [300, 50, 1000, 550]);
-saveas(fig2, "HW07/Fig/Impulse_Response.png");
+%saveas(fig2, "HW07/Fig/Impulse_Response.png");
