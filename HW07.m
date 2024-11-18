@@ -48,3 +48,8 @@ legend_labels = arrayfun(@(x) sprintf('$p\\_3=%.1f$', x), p3, 'UniformOutput', f
 lgd = legend(legend_labels, 'Interpreter', 'latex');
 set(fig2, "position", [300, 50, 1000, 550]);
 %saveas(fig2, "HW07/Fig/Impulse_Response.png");
+
+%% Final
+i = 4;
+sys_final = sys_numer(i) / sys_denom(i);
+info = stepinfo(sys);
